@@ -16,6 +16,7 @@
 		26F999F82A1D353C00F0AF8F /* BaiTapBuoi12Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F999F72A1D353C00F0AF8F /* BaiTapBuoi12Tests.swift */; };
 		26F99A022A1D353C00F0AF8F /* BaiTapBuoi12UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F99A012A1D353C00F0AF8F /* BaiTapBuoi12UITests.swift */; };
 		26F99A042A1D353C00F0AF8F /* BaiTapBuoi12UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F99A032A1D353C00F0AF8F /* BaiTapBuoi12UITestsLaunchTests.swift */; };
+		26F99A892A20C56200F0AF8F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F99A882A20C56200F0AF8F /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		26F999FD2A1D353C00F0AF8F /* BaiTapBuoi12UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiTapBuoi12UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F99A012A1D353C00F0AF8F /* BaiTapBuoi12UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiTapBuoi12UITests.swift; sourceTree = "<group>"; };
 		26F99A032A1D353C00F0AF8F /* BaiTapBuoi12UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiTapBuoi12UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		26F99A882A20C56200F0AF8F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				26F999E02A1D353A00F0AF8F /* AppDelegate.swift */,
 				26F999E22A1D353A00F0AF8F /* SceneDelegate.swift */,
 				26F999E42A1D353A00F0AF8F /* ViewController.swift */,
+				26F99A882A20C56200F0AF8F /* ProfileViewController.swift */,
 				26F999E62A1D353A00F0AF8F /* Main.storyboard */,
 				26F999E92A1D353C00F0AF8F /* Assets.xcassets */,
 				26F999EB2A1D353C00F0AF8F /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			files = (
 				26F999E52A1D353A00F0AF8F /* ViewController.swift in Sources */,
 				26F999E12A1D353A00F0AF8F /* AppDelegate.swift in Sources */,
+				26F99A892A20C56200F0AF8F /* ProfileViewController.swift in Sources */,
 				26F999E32A1D353A00F0AF8F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,7 @@
 import UIKit
 class ViewController: UIViewController {
     
+    @IBOutlet weak var viewPerson: UIView!
     @IBOutlet weak var viewTop: UIView!
     @IBOutlet weak var avatar: UIImageView!
     
@@ -61,6 +62,20 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         setupUI()
         setupFrame()
+        // Tạo một UITapGestureRecognizer
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(goToProfile(_sender: )))
+        // Đặt số lần chạm cần nhận dạng (ví dụ: 1)
+        tapGesture.numberOfTapsRequired = 1
+        
+        // Thêm UITapGestureRecognizer vào UIStackView
+        viewPerson.addGestureRecognizer(tapGesture)
+//        view.isUserInteractionEnabled = true
+    }
+    @objc func goToProfile(_sender: UITapGestureRecognizer){
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let personVC = mainStoryboard.instantiateViewController(identifier: "ProfileViewController") as! ProfileViewController
+        personVC.modalPresentationStyle = .popover
+        self.present(personVC, animated: true)
     }
     
     func setupUI(){
@@ -95,18 +110,21 @@ class ViewController: UIViewController {
         lblCommunity.text = "Community"
         
         
+        
         let colorHeadphone = UIColor(red: 0.459, green: 0.51, blue: 0.831, alpha: 1)
         imgHeadPhone.tintColor = colorHeadphone
         lblHeadphone.text = "Fell Free to Ask, We Ready to Help"
         lblHeadphone.textColor = colorHeadphone
         let paleGray = UIColor(red: 0.929, green: 0.937, blue: 0.992, alpha: 1)
         viewHeadphone.backgroundColor = paleGray
+        viewHeadphone.layer.cornerRadius = 10
         
     }
     
     func setupFrame(){
         avatar.frame.origin.x = viewTop.frame.origin.x + 50
         avatar.frame.origin.y = viewTop.frame.origin.y + 90
+        
     }
 }
 
